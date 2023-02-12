@@ -90,9 +90,9 @@ return (
 <>
 <h1 id="contact" style={styles.header}>Contact Me</h1>
 
-        <p>Name: {formData.name}</p>
+        {/* <p>Name: {formData.name}</p>
         <p>Email:  {formData.email}</p>
-        <p>Message:  {formData.message}</p>
+        <p>Message:  {formData.message}</p> */}
     
     <form onSubmit={handleSubmit}>
             <input 
