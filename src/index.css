@@ -13,10 +13,10 @@
 :root {
   
 
---color-bg: #121212;
---color-bg-variant: #1c1c1c;
---color-primary: #00b0ff;
---color-primary-variant: rgba(0, 176, 255, 0.4);
+--color-bg:#5f0f40;
+--color-bg-variant: #e36414;
+--color-primary: #00b0ffz;
+--color-primary-variant: #fb8b24;
 --color-white: #ffffff;
 --color-light: rgba(255, 255, 255, 0.8);
 
@@ -126,7 +126,7 @@ a:focus {
 .btn-outline:active,
 .btn-outline.active {
     color: white;
-    border-color: lightseagreen;
+    border-color: #e36414;
     background-color: #869dc7;
 }
 
@@ -219,7 +219,7 @@ a:focus {
 
 .contact-section {
   padding: 10rem 0;
-  background: url("./assets/images/annie-spratt-unsplash.jpg");
+  /* background: url("./assets/images/annie-spratt-unsplash.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -256,7 +256,7 @@ a:focus {
 .contact-section .card hr {
   border-color: #aeaeae;
   border-width: 0.25rem;
-  width: 7rem;
+  width: 2rem;
 }
 
 .contact-section .social {
@@ -289,7 +289,7 @@ a:focus {
 }
   form {
     display: flex;
-    flex-direction: column;
+    flex-direction: colu;
     gap: 1.2rem;
   }
   form {
@@ -311,6 +311,7 @@ a:focus {
     text-align: center;
     color: rgba(255, 255, 255, 0.3);
     background-color: #222222;
+    float: none!important;
 }
 
 footer p {
@@ -332,6 +333,14 @@ footer ul li a:focus,
 footer ul li a:active,
 footer ul li a.active {
     text-decoration: none;
+}
+.footerContact{
+
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
 }
 
 
@@ -380,7 +389,8 @@ header.masthead {
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
-  background: url("./assets/images/02-portfolio-3.jpg");
+  background: #5f0f40;
+  /* background: url("./assets/images/02-portfolio-3.jpg"); */
 }
 
 header.masthead .header-content {
@@ -591,6 +601,7 @@ p {
 .projects__item-image {
   border-radius: 1.5rem;
   overflow: hidden;
+ 
 }
 
 .projects__item h3 {

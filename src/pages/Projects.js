@@ -6,7 +6,7 @@ import ProjectImage3a from '../assets/images/ProjectImage3a.png'
 import ProjectImage4a from '../assets/images/ProjectImage4a.png'
 import ProjectImage5a from '../assets/images/ProjectImage5a.png'
 import ProjectImage6a from '../assets/images/ProjectImage6a.png'
-
+import Project from '../components/Project'
 // DO NOT USE THE IMAGES IN PRODUCTION
 
 const data = [
@@ -66,18 +66,9 @@ const Projects = () => {
 
       <div className="container projects__container">
         {
-          data.map(({id, image, title, github, demo}) => {
+          data.map((project) => {
             return (
-              <article key={id} className='projects__item'>
-              <div className="projects__item-image">
-                <img src={image} alt={title} />
-              </div>
-              <h3>{title}</h3>
-              <div className="projects__item-cta">
-                <a href={github} className='btn' target='_blank' rel="noreferrer">Github</a>
-                <a href={demo} className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
-              </div>
-            </article>
+             <Project project={project} />
             )
           })
         }
