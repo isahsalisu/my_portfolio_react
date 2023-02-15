@@ -78,35 +78,32 @@ function Contact() {
         Contact Me
       </h1>
 
-      {/* <p>Name: {formData.name}</p>
+        <p>Name: {formData.name}</p>
         <p>Email:  {formData.email}</p>
-        <p>Message:  {formData.message}</p> */}
-
-      <form onSubmit={handleSubmit}>
-        <input
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          type="text"
-          placeholder="Enter Your Name"
-        />
-        <input
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          type="text"
-          placeholder="Enter Your Email Address"
-        />
-        <textarea
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          placeholder="Enter your message..."
-          cols="30"
-          rows="10"
-        ></textarea>
-        <button style={styles.submitBtn}>Submit</button>
-      </form>
+        <p>Message:  {formData.message}</p>
+    
+    <form onSubmit={handleSubmit}>
+            <input 
+            name='name'
+            value={formData.name} 
+            onChange={handleChange}  
+            type='text'
+             placeholder='Enter Your Name' />
+            <input
+             name='email'
+             value={formData.email} 
+              onChange={handleChange}
+               type='text'
+                placeholder='Enter Your Email Address' />
+            <textarea 
+            
+            name='message'
+            value={formData.message}
+             onChange={handleChange}
+            placeholder='Enter your message...'
+             cols='30' rows='10'></textarea>
+            <button style={styles.submitBtn}>Submit</button>
+    </form>
 
       {success && <p style={styles.success}>Form Submitted Successfully!</p>}
     </>
