@@ -6,7 +6,7 @@ function Footer() {
 
 <section className="contact-section bg-black" id="contact">
         <div className="container">
-            <div className="row">
+            <div className="row footerContact">
                 <div className="col-md-4 mb-3 mb-md-0">
                     <div className="card py-4 h-100">
                         <div className="card-body text-center">
