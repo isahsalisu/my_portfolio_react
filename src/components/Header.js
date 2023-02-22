@@ -1,10 +1,10 @@
+
 import React from 'react';
-//import MyImage from "../assets/images/salis2.jpg"
 import { NavLink } from "react-router-dom";
 function Header (){
     return (
 
-<header>
+          // <header>
         <nav>
       <NavLink to="/">Home</NavLink>
       <NavLink to="/about">About</NavLink>
@@ -12,9 +12,12 @@ function Header (){
       <NavLink to="/contact">Contacts</NavLink>
         </nav>  
 
-        </header>  
+        // </header>  
     )
 }
 export default Header;
+
+
+
 
 
