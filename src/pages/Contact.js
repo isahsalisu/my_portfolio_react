@@ -1,5 +1,9 @@
 //import { findAllByAltText } from '@testing-library/react';
 
+import CV from "../assets/images/salis2.jpg"
+
+//import CV from "../assets/images/salisu2.jpg"
+
 import { useState } from "react";
 
 const styles = {
@@ -12,6 +16,13 @@ const styles = {
     color: "#fff",
     cursor: "pointer",
     borderRadius: "25px",
+  },
+
+  h2: {
+    textAlign:'left',
+    color: "#fb8b24",
+    marginTop: "15px",
+   
   },
 
   success: {
@@ -74,13 +85,49 @@ function Contact() {
 
   return (
     <>
+    <section className='container'>
       <h1 id="contact" style={styles.header}>
         Contact Me
+
       </h1>
 
-        <p>Name: {formData.name}</p>
+      <h2 style={styles.h2}>
+        Salisu Isah
+
+      </h2>
+
+        {/* <p>Name: {formData.name}</p>
         <p>Email:  {formData.email}</p>
-        <p>Message:  {formData.message}</p>
+        <p>Message:  {formData.message}</p> */}
+
+        <p>
+  
+       <a href={CV} download >Download CV</a>
+  
+     </p>
+
+    {/* <p>
+  
+       <a href={CV} download className="btn">Download CV</a>
+  
+     </p> */}
+
+     {/* <p>
+  
+       <a href={CV} download className="btn">Linkedln</a>
+  
+     </p>
+
+     <p>
+  
+       <a href={CV} download className="btn">Github</a>
+  
+     </p> */}
+
+     <p><a style={styles.success} href="https://github.com/isahsalisu"><b>Github </b>: Salisu Isah</a></p><p><a style={styles.success} href="www.linkedin.com/in/shirleyama"><b>LinkedIn </b>Salisu Isah</a></p>
+
+
+
     
     <form onSubmit={handleSubmit}>
             <input 
@@ -105,7 +152,9 @@ function Contact() {
             <button style={styles.submitBtn}>Submit</button>
     </form>
 
+
       {success && <p style={styles.success}>Form Submitted Successfully!</p>}
+      </section>
     </>
   );
 }
