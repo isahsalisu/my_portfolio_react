@@ -1,59 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
 :root {
-  
 
---color-bg:#5f0f40;
---color-bg-variant: #e36414;
---color-primary: #00b0ff2;
---color-primary-variant: #fb8b24;
---color-white: #ffffff;
---color-light: rgba(255, 255, 255, 0.8);
 
-  --transition: all 400ms ease;
+    --color-bg: #6D6875;
+    --color-bg-variant: #B5838D;
+    --color-primary: #E5989B;
+    --color-primary-variant: #fb8b24;
+    --color-white: #ffffff;
+    /* --color-light: rgba(255, 255, 255, 0.8); */
 
-  --container-width-lg: 85%;
-  --container-width-md: 96%;
-  --container-width-sm: 95%;
+    --color-light: #FFCDB2;
+
+    --transition: all 400ms ease;
+
+    --container-width-lg: 85%;
+    --container-width-md: 96%;
+    --container-width-sm: 95%;
 }
 
+ /* ============== GENEARL STYLES ============== */
 
   
+ h1,
+ h2,
+ h3,
+ h4,
+ h5
+ h6 {
+   /* font-weight: 500; */
+   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+   font-weight: 500;
+   letter-spacing: 1px;
+ }
  
-
-  /* ============== GENEARL STYLES ============== */
-
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5
-  h6 {
-    /* font-weight: 500; */
-    font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
-    font-weight: 500;
-    letter-spacing: 1px;
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-  }
-
- 
-
-  
-  a {
+ h1 {
+   font-size: 2.5rem;
+ }
+ a {
     color: var(--color-primary);
     transition: var(--transition);
   }
@@ -73,122 +67,75 @@ a:focus {
 
 }
 
-  
-  body {
+ 
+body {
     font-family: "Poppins", sans-serif;
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
     
   }
-  
-  .btn {
+
+   /* .btn  */
+
+   .btn {
+    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 80%; 
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
     width: max-content;
-    display: inline-block;
-    color: var(--color-primary);
-    padding: 0.75rem 1.2rem;
-    border-radius: 0.4rem;
+     display: inline-block; 
+    color: var(--color-primary); 
+    padding: 0.75rem 1.2rem; 
+    border-radius: 0.7rem;
     cursor: pointer;
     border: 1px solid var(--color-primary);
     transition: var(--transition);
-  }
-  
-  .btn:hover {
+    background-color: #0b3954;
+} 
+
+.btn:hover {
     background: var(--color-white);
     color: var(--color-bg);
     border-color: transparent;
-  }
-  
-  .btn-primary {
-    background: 00b4d8;
-    color: var(--color-bg);
-  }
+  }  
 
-  /* btn */
-  .btn {
-    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-    padding: 1.25rem 2rem;
-    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 80%;
-    text-transform: uppercase;
-    letter-spacing: 0.15rem;
-    border: 0;
-}
-
- .btn-outline {
-    color: white;
-    border: 2px solid;
-    border-color: white;
-} 
-
- .btn-outline:hover,
-.btn-outline:focus,
-.btn-outline:active,
-.btn-outline.active {
-    color: white;
-    border-color: #e36414;
-    background-color: white;
-}
-
-.btn {
-    border-radius: 30px;
-    font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
-    letter-spacing: 2px;
-    text-transform: uppercase;
-} 
-
- .btn-xl {
+  .btn-xl {
     font-size: 11px;
     padding: 15px 45px;
 } 
 
- .bg-black {
-  background-color: #000000 !important;
-} 
-
- .bg-primary {
-  background: #fdcc52;
-  background: linear-gradient(#fdcc52, #fdc539);
-} 
-
-
+/* .container {
+    display: flex;
+    justify-content: flex-end;
+  } */
 
   .container {
     width: var(--container-width-lg);
     margin: 0 auto;
     transform: scale(1.1);
-  }
+  } 
+
 
   main.container, section.container, .container.projects__container, #projects {
   
     margin: 50px auto;
-  }
+  } 
 
-  
-
-  .container.contact__container {
+  /* .container.contact__container {
     width: 58%;
     display: grid;
     grid-template-columns: 30% 58%;
     gap: 12%;
     transform: scale(1.1);
   }
-
-  .container.contact__container {
-    width: 58%;
-    display: grid;
-    grid-template-columns: 30% 58%;
-    gap: 12%;
-    transform: scale(1.1);
-  }
-  
   .contact__options {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
     transform: scale(1.1);
   }
-  
+
   .contact__option {
     background: var(--color-bg-variant);
     padding: 1.2rem;
@@ -199,7 +146,9 @@ a:focus {
     transform: scale(1.1);
   }
   
-  .contact__option:hover {
+   */
+
+   .contact__option:hover {
     background: transparent;
     border-color: var(--color-primary-variant);
   }
@@ -258,61 +207,35 @@ a:focus {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
   letter-spacing: 0.15rem;
-}
+} */
 
-.contact-section .card hr {
+ .contact-section .card hr {
   border-color: #aeaeae;
   border-width: 0.25rem;
   width: 2rem;
 }
-
-.contact-section .social {
-  margin-top: 5rem;
-  background-color: #555;
-  border-radius: 30px;
-}
-
-.contact-section .social a {
-  text-align: center;
-  height: 3rem;
-  width: 3rem;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 100%;
-  line-height: 3rem;
-  color: rgba(255, 255, 255, 0.537);
-}
-
-.contact-section .social a:visited {
-  color: #eaeaea;
-}
-
-.contact-section .social a:hover {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.contact-section .social a:active {
-  color: #333;
-
-}
+ 
 
 
+
+  
 ::placeholder {
   color: white;
   opacity: 1; /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
- color: white;
-}
 
 ::-ms-input-placeholder { /* Microsoft Edge */
  color: white;
 }
+
   form {
     display: flex;
     flex-direction: colu;
     gap: 1.2rem;
   }
+
+
   form {
     width: 380px;
     display: flex;
@@ -328,55 +251,16 @@ a:focus {
   }
 
   footer {
-    padding: 25px 0;
+    padding: 12px 0;
     text-align: center;
-    color: rgba(255, 255, 255, 0.3);
-    background-color: #222222;
+    color: white;
+    background-color: #2b2d42;
     float: none!important;
-}
-
-footer p {
-    font-size: 12px;
-    margin: 0;
-}
-
-footer ul {
-    margin-bottom: 0;
-}
-
-footer ul li a {
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.3);
-}
-
-footer ul li a:hover,
-footer ul li a:focus,
-footer ul li a:active,
-footer ul li a.active {
-    text-decoration: none;
-}
-.footerContact{
-
-  display:flex;
-  flex-direction:row;
-  justify-content: center;
-  gap: 30px;
-  padding: 15px;
+    justify-content: center;
+    align-items: center;
 }
 
 
-hr {
-  max-width: 100px;
-  margin: 25px auto 0;
-  border-width: 1px;
-  border-color: rgba(34, 34, 34, 0.1);
-}
-
-hr.light {
-  border-color: white;
-}
-
-  
  header { 
   display: flex;
   justify-content: space-between;
@@ -400,8 +284,6 @@ header nav a.active {
 } 
 
 
-/* the other */
-
 /* Hero section ============= */
 
 header.masthead {
@@ -413,8 +295,8 @@ header.masthead {
   margin-bottom: 50px;
   color: white;
 
-  background: #5f0f40;
-  /* background: url("./assets/images/02-portfolio-3.jpg"); */
+  background: #6D6875;
+   /* background: url("./assets/images/02-portfolio-3.jpg");  */
 }
 
 header.masthead .header-content {
@@ -493,32 +375,29 @@ header.masthead .device-container .screen img {
     line-height: 1.5;
    }
 
- 
-   
-   
    nav {
-    background: rgba(0, 0, 0, 0.3);  
-  width: max-content;
-  display: block;
-  padding: 0.7rem 1.7rem;
-  z-index: 2;
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
+  padding: 0.1rem;
   top: 2rem;
-  display: flex;
-  gap: 0.8rem;
-  border-radius: 3rem;
+   display: flex; 
   backdrop-filter: blur(15px);
-}
+  background: #001427;
+  align-items: center;
+  box-shadow: 5px 3px 3px;
+  justify-content: end;
+} 
+
 
 nav a {
-  background: transparent;
-  padding: 0.9rem;
-  border-radius: 75%;
+  /* background: transparent; */
+  padding: 1.2rem;
+  border-radius: 65px;
   display: flex;
   color: var(--color-light);
   font-size: 1.1rem;
+  text-align: center;
+  line-height: 1.5;
+ 
+  
 }
 
 nav a:hover {
@@ -526,8 +405,9 @@ nav a:hover {
 }
 
 nav a.active {
-  background: #1f1919;
+  /* background: #1f1919; */
   color: var(--color-white);
+  text-decoration: underline ;
 }
 
 
@@ -567,73 +447,17 @@ p {
 }
 
 .projects__item h3 {
-  margin: 1.2rem 0 2rem;
+  margin: 0.2rem 0 2rem;
 }
 
 .projects__item-cta {
   display: flex;
+  
   gap: 1rem;
   margin-bottom: 1rem;
 }
 
-/* Testimonials section ============= */
 
-/* section.testimonials {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-
-section.testimonials .testimonial-item {
-  max-width: 18rem;
-}
-
-section.testimonials .testimonial-item img {
-  max-width: 20rem;
-  box-shadow: 0px 5px 5px 0.7px #cccccc;
-  border-radius: 0px;
-}
-
-section.testimonials .testimonial-item img {
-  box-shadow: 5px 5px 5px;
-  background-color: #cccccc;
-  padding: 0px;
-  border-radius: 25px;
-  transition: all 1s;
-  overflow: hidden;
-}
-
-section.testimonials .testimonial-item img:hover {
-  transform: scale(1.2);
-}
-
- */
-
-
-  
-  section {
-    margin-top: 8rem;
-  }
-  
-  section > h2,
-  section > h5 {
-    text-align: center;
-    color: var(--color-light);
-  }
-  
-  section > h2 {
-    color: var(--color-primary);
-    margin-bottom: 3rem;
-  }
-  
-  .text-light {
-    color: var(--color-light);
-  }
-
-  .text-primary {
-    color: #fdcc52;
-}
-  
-  
   /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
   @media screen and (max-width: 1024px) {
     .container {
@@ -717,7 +541,3 @@ section.testimonials .testimonial-item img:hover {
 }
 
   
- 
-
-
-

@@ -1,6 +1,6 @@
 //import { findAllByAltText } from '@testing-library/react';
 
-import CV from "../assets/images/salis2.jpg"
+import CV from "../assets/images/salis2.jpg";
 
 //import CV from "../assets/images/salisu2.jpg"
 
@@ -19,10 +19,9 @@ const styles = {
   },
 
   h2: {
-    textAlign:'left',
+    textAlign: "left",
     color: "#fb8b24",
     marginTop: "15px",
-   
   },
 
   success: {
@@ -85,75 +84,67 @@ function Contact() {
 
   return (
     <>
-    <section className='container'>
-      <h1 id="contact" style={styles.header}>
-        Contact Me
+      <section className="container">
+        <h1 id="contact" style={styles.header}>
+          Contact Me
+        </h1>
 
-      </h1>
-
-      <h2 style={styles.h2}>
-        Salisu Isah
-
-      </h2>
-
-        {/* <p>Name: {formData.name}</p>
-        <p>Email:  {formData.email}</p>
-        <p>Message:  {formData.message}</p> */}
+        <h2 style={styles.h2}>Salisu Isah</h2>
 
         <p>
-  
-       <a href={CV} download >Download CV</a>
-  
-     </p>
+          <a href={CV} download>
+            Download CV
+          </a>
+        </p>
 
-    {/* <p>
-  
-       <a href={CV} download className="btn">Download CV</a>
-  
-     </p> */}
+      
+        <p>
+          <a
+            style={styles.success}
+            href="https://github.com/isahsalisu"
+            target="_blank "
+          >
+            <b>Github </b>: To github
+          </a>
+        </p>
+        <p>
+          <a
+            style={styles.success}
+            href="https://www.linkedin.com/in/salisu-isah-ab201b173/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <b>LinkedIn </b>: To Linkedln
+          </a>
+        </p>
 
-     {/* <p>
-  
-       <a href={CV} download className="btn">Linkedln</a>
-  
-     </p>
-
-     <p>
-  
-       <a href={CV} download className="btn">Github</a>
-  
-     </p> */}
-
-     <p><a style={styles.success} href="https://github.com/isahsalisu"><b>Github </b>: Salisu Isah</a></p><p><a style={styles.success} href="www.linkedin.com/in/shirleyama"><b>LinkedIn </b>Salisu Isah</a></p>
-
-
-
-    
-    <form onSubmit={handleSubmit}>
-            <input 
-            name='name'
-            value={formData.name} 
-            onChange={handleChange}  
-            type='text'
-             placeholder='Enter Your Name' />
-            <input
-             name='email'
-             value={formData.email} 
-              onChange={handleChange}
-               type='text'
-                placeholder='Enter Your Email Address' />
-            <textarea 
-            
-            name='message'
+        <form onSubmit={handleSubmit}>
+          <input
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            type="text"
+            placeholder="Enter Your Name"
+          />
+          <input
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            type="text"
+            placeholder="Enter Your Email Address"
+          />
+          <textarea
+            name="message"
             value={formData.message}
-             onChange={handleChange}
-            placeholder='Enter your message...'
-             cols='30' rows='10'></textarea>
-            <button style={styles.submitBtn}>Submit</button>
-    </form>
+            onChange={handleChange}
+            placeholder="Enter your message..."
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button style={styles.submitBtn}>Submit</button>
+        </form>
 
-
-      {success && <p style={styles.success}>Form Submitted Successfully!</p>}
+        {success && <p style={styles.success}>Form Submitted Successfully!</p>}
       </section>
     </>
   );
