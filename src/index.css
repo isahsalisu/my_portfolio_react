@@ -39,10 +39,15 @@ body {
 
 }
 
+.container{
+  margin: 10px 50px;
+}
+.about{
 
-
-
-
+  display:flex;
+  flex-direction: row;
+  justify-content:space-around;
+}
 
 .container.contact__container {
   width: 58%;
@@ -239,11 +244,11 @@ header.masthead .device-container .screen img {
   color: var(--color-bg);
 }
 
-img {
+/* img {
   display: block;
   width: 100%;
   object-fit: cover;
-}
+} */
 
 img {
   display: block;
@@ -399,13 +404,7 @@ header {
     display: none;
   }
 
-  /* added after tutorial */
-  .me {
-    width: 94%;
-    max-width: 20rem;
-    margin-top: 2.5rem;
-    justify-content: center;
-  }
+  
 
   /* added after tutorial */
   .cta {
@@ -447,6 +446,8 @@ nav a.active {
   background: var(--color-primary);
   color: var(--color-bg);
 }
+
+
 
 
 

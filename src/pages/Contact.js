@@ -1,45 +1,12 @@
 //import { findAllByAltText } from '@testing-library/react';
 
-import CV from "../assets/images/salis2.jpg";
+import CV from "../assets/images/SalisuCvWebDev.pdf";
 
 //import CV from "../assets/images/salisu2.jpg"
 
 import { useState } from "react";
 
-// const styles = {
-//   header: {
-//     textAlign: "center",
-//     margin: "20px 0",
-//   },
-//   submitBtn: {
-//     backgroundColor: "#0f4c5c",
-//     color: "#fff",
-//     cursor: "pointer",
-//     borderRadius: "25px",
-//     width:'50%',
-//     margin:'auto',
-//   },
 
-//   h2: {
-//     textAlign: "left",
-//     color: "red",
-//     marginTop: "15px",
-//   },
-
-//   success: {
-//     textAlign: "center",
-//     color: "red",
-//     marginTop: "15px",
-//   },
-
- 
-//   a :{
-//     color: 'white',
-//     fontStyle: 'italic',
-//     fontSize: '40px',
-//   }
-  
-// };
 const styles = {
   header: {
       textAlign: 'center',
@@ -48,15 +15,27 @@ const styles = {
   submitBtn: {
       backgroundColor: 'lightseagreen',
       color: '#fff',
-      cursor: 'pointer'
+      cursor: 'pointer',
+      
   },
 
   success: {
       textAlign: 'center',
       color: 'lightseagreen',
-      marginTop: '15px'
+      marginTop: '15px',
       
-  }
+  },
+  a :{
+        color: 'white',
+        fontStyle: 'italic',
+        fontSize: '40px',
+      },
+      h3 :{
+        color: 'white',
+        fontStyle: 'italic',
+        fontSize: '20px',
+        display: 'flex'
+      }
 };
 
 
@@ -123,9 +102,7 @@ function Contact() {
         <h3 style={styles.a}>click the download</h3>
 
         <p style={styles.success}>
-          <a href={CV} download>
-            Download CV
-          </a>
+          <a href={CV} download><h3 style={styles.h3}>Download CV</h3></a> 
         </p>
 
         <p>
