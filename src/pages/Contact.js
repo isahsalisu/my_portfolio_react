@@ -6,30 +6,60 @@ import CV from "../assets/images/salis2.jpg";
 
 import { useState } from "react";
 
+// const styles = {
+//   header: {
+//     textAlign: "center",
+//     margin: "20px 0",
+//   },
+//   submitBtn: {
+//     backgroundColor: "#0f4c5c",
+//     color: "#fff",
+//     cursor: "pointer",
+//     borderRadius: "25px",
+//     width:'50%',
+//     margin:'auto',
+//   },
+
+//   h2: {
+//     textAlign: "left",
+//     color: "red",
+//     marginTop: "15px",
+//   },
+
+//   success: {
+//     textAlign: "center",
+//     color: "red",
+//     marginTop: "15px",
+//   },
+
+ 
+//   a :{
+//     color: 'white',
+//     fontStyle: 'italic',
+//     fontSize: '40px',
+//   }
+  
+// };
 const styles = {
   header: {
-    textAlign: "center",
-    margin: "20px 0",
+      textAlign: 'center',
+      margin: '20px 0'
   },
   submitBtn: {
-    backgroundColor: "#0f4c5c",
-    color: "#fff",
-    cursor: "pointer",
-    borderRadius: "25px",
-  },
-
-  h2: {
-    textAlign: "left",
-    color: "#fb8b24",
-    marginTop: "15px",
+      backgroundColor: 'lightseagreen',
+      color: '#fff',
+      cursor: 'pointer'
   },
 
   success: {
-    textAlign: "center",
-    color: "#fb8b24",
-    marginTop: "15px",
-  },
+      textAlign: 'center',
+      color: 'lightseagreen',
+      marginTop: '15px'
+      
+  }
 };
+
+
 
 function Contact() {
   const [success, setSuccess] = useState(false);
@@ -89,22 +119,22 @@ function Contact() {
           Contact Me
         </h1>
 
-        <h2 style={styles.h2}>Salisu Isah</h2>
+        <h2 style={styles.success}>Find information below</h2>
+        <h3 style={styles.a}>click the download</h3>
 
-        <p>
+        <p style={styles.success}>
           <a href={CV} download>
             Download CV
           </a>
         </p>
 
-      
         <p>
           <a
             style={styles.success}
             href="https://github.com/isahsalisu"
             target="_blank "
           >
-            <b>Github </b>: To github
+            <b  style={styles.h2}>Github </b>: a click away...
           </a>
         </p>
         <p>
@@ -114,7 +144,7 @@ function Contact() {
             target="_blank"
             rel="noreferrer"
           >
-            <b>LinkedIn </b>: To Linkedln
+            <b style={styles.h2}>LinkedIn </b>: a click away...
           </a>
         </p>
 

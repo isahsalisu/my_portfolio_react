@@ -11,7 +11,7 @@ function Landing (props){
                  <div className="row h-100">
                      <div className="col-lg-7 my-auto">
                          <div className="header-content mx-auto">
-                             <h1 className="mb-5">I am a Front-End Developer creating world class websites with an on-going training in Trilogy's bootcamp</h1>
+                             <h1 className="mb-5">I am a Front-End Developer creating world class websites </h1>
                              <a href="#about" className="btn btn-outline btn-xl js-scroll-trigger">More about me!</a>
                          </div>
                      </div>

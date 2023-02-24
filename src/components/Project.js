@@ -1,7 +1,7 @@
 import React from 'react'
 //import './projects.css'
 
-// DO NOT USE THE IMAGES IN PRODUCTION
+
 
 
 
